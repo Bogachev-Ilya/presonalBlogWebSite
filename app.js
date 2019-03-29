@@ -17,13 +17,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 app.set('view engine', 'ejs');
-// mongoose.connect("mongodb+srv://admin-ilia:Admin123@cluster0-p6buz.mongodb.net/blogDB", {
-//     useNewUrlParser: true
-// });
-
-mongoose.connect("mongodb://localhost:27017/blogDB", {
+mongoose.connect("mongodb+srv://admin-ilia:Admin123@cluster0-p6buz.mongodb.net/blogDB", {
     useNewUrlParser: true
 });
+
+// mongoose.connect("mongodb://localhost:27017/blogDB", {
+//     useNewUrlParser: true
+// });
 
 const postSchema = {
     title:String,
