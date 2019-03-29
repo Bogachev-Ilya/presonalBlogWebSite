@@ -4,8 +4,8 @@
 <p><%= homeContent %></p>
 <% postsArr.forEach(function(element){ %>
 <h1><%= element.title %></h1>
-<p class="trim-text"><%= element.content %>
-    <a href="/posts/<%= element.title %>">Read More</a>
+<p class="trim-text"><%= element.post %>
+    <a href="/posts/<%= element._id %>">Read More</a>
 </p>
 <% }); %>
 <%- include("partials/footer"); -%>
